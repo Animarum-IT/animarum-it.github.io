@@ -15,15 +15,15 @@ const Header = () => {
             <img
               src="/images/demo-corporate/logo-dark.svg"
               alt="Animarum Logo"
-              width={150}
-              height={45}
+              width={300}
+              height={75}
               className="light-mode-logo"
             />
             <img
               src="/images/demo-corporate/logo-white.svg"
               alt="Animarum Logo"
-              width={150}
-              height={45}
+              width={300}
+              height={75}
               className="dark-mode-logo"
             />
           </a>

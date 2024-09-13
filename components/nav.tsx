@@ -11,12 +11,12 @@ import { usePathname } from "next/navigation";
 
 
 const corporateMultipage: LinkMenu[] = [
-    { href: "/corporate-multi-page", text: "Home" },
-    { href: "/corporate-about", text: "About" },
-    { href: "/corporate-services", text: "Services" },
+    { href: "/", text: "Home" },
+    { href: "#about", text: "About" },
+    { href: "#services", text: "Services" },
     // { href: "/corporate-portfolio", text: "Portfolio" },
     // { href: "/corporate-blog", text: "Blog" },
-    { href: "/corporate-contact", text: "Contact" },
+    { href: "#contact", text: "Contact" },
 ];
 
 
