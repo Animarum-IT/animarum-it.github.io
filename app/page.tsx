@@ -16,7 +16,7 @@ import Contact from "@/components/sections/contact";
 
 
 
-const Home = ({ dark = false }: { dark: boolean }) => {
+const Home = () => {
 
   const testimonials4 = [
     {
@@ -87,9 +87,9 @@ const Home = ({ dark = false }: { dark: boolean }) => {
             </section>
 
             {/* <Home4 onePage /> */}
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+            <hr className={`mt-0 mb-0 `} />
             <section
-              className={`page-section scrollSpysection  ${dark ? "bg-dark-1 light-content" : ""
+              className={`page-section scrollSpysection
                 } `}
               id="about"
             >
@@ -154,8 +154,7 @@ const Home = ({ dark = false }: { dark: boolean }) => {
 
                   <a
                     href="#services"
-                    className={`btn btn-mod ${dark ? "btn-dark" : "btn-w"
-                      } btn-with-icon btn-circle`}
+                    className={`btn btn-mod btn-w btn-with-icon btn-circle`}
                   >
                     <span className="btn-icon color-3">
                       <i className="mi-favorite" />
@@ -229,9 +228,7 @@ const Home = ({ dark = false }: { dark: boolean }) => {
             </section>
 
             <section
-        className={`page-section pb-0 scrollSpysection   ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
+        className={`page-section pb-0 scrollSpysection`}
         id="services"
       >
         <div className="container position-relative">
@@ -268,9 +265,7 @@ const Home = ({ dark = false }: { dark: boolean }) => {
               <div className="local-scroll text-center">
               <a
                       href="#contact"
-                      className={`btn btn-mod ${
-                        dark ? "btn-dark" : "btn-w"
-                      } btn-with-icon btn-circle`}
+                      className={`btn btn-mod btn-w btn-with-icon btn-circle`}
                     >
                       <span className="btn-icon color-1">
                         <i className="mi-heart" />
