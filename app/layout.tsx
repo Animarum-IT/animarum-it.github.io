@@ -1,15 +1,9 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
+
 import { siteConfig } from "@/config/site";
-
-import dynamic from 'next/dynamic'
-
-
-// import AppInit from "@/components/layoutInitializations";
-
-const AppInit = dynamic(() => import('@/components/layoutInitializations'), { ssr: false });
-
+import AppInit from "@/components/layoutInitializations";
 
 export const metadata: Metadata = {
   title: {
@@ -63,9 +57,8 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="appear-animate body">
+      <body className="appear-animate body" suppressHydrationWarning>
         <AppInit />
-
         {children}
       </body>
     </html>

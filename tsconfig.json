@@ -36,7 +36,7 @@
     ".next/types/**/*.ts",
     "utlis/addScrollSpy.js",
     "dist/types/**/*.ts"
-  ],
+, "utlis/parallax.js"  ],
   "exclude": [
     "node_modules"
   ]
