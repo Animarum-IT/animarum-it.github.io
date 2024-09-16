@@ -2,7 +2,14 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/config/site";
-import AppInit from "@/components/layoutInitializations";
+
+import dynamic from 'next/dynamic'
+
+
+// import AppInit from "@/components/layoutInitializations";
+
+const AppInit = dynamic(() => import('@/components/layoutInitializations'), { ssr: false });
+
 
 export const metadata: Metadata = {
   title: {
