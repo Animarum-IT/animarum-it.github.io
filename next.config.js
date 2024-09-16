@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    assetPrefix: './',
+    basePath: "/animarum-web",
 
     images: {
         unoptimized: true,
