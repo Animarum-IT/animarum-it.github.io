@@ -1,5 +1,3 @@
-const Testimonials = () => {
-    
-};
+const Testimonials = () => {};
 
 export default Testimonials;

@@ -160,8 +160,6 @@ export const HeartFilledIcon = ({
 
 export const ArrowRightIcon = (props: IconSvgProps) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-
     aria-hidden="true"
     fill="none"
     focusable="false"
@@ -169,23 +167,33 @@ export const ArrowRightIcon = (props: IconSvgProps) => (
     role="presentation"
     viewBox="0 0 24 24"
     width="1em"
+    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <path d="M0 0h24v24H0z" fill="none" />
-    <path stroke="currentColor" strokeLinecap="round"
+    <path
+      d="M5 12l14 0"
+      stroke="currentColor"
+      strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"
-      d="M5 12l14 0" />
-    <path stroke="currentColor" strokeLinecap="round"
+    />
+    <path
+      d="M15 16l4 -4"
+      stroke="currentColor"
+      strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"
-      d="M15 16l4 -4" />
-    <path stroke="currentColor" strokeLinecap="round"
+    />
+    <path
+      d="M15 8l4 4"
+      stroke="currentColor"
+      strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"
-      d="M15 8l4 4" />
+    />
   </svg>
-)
+);
 
 export const SearchIcon = (props: IconSvgProps) => (
   <svg

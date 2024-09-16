@@ -1,3 +1,5 @@
+'use client'
+
 import WOW from "wow.js";
 export function init_wow() {
   // const { WOW } = require("wowjs");

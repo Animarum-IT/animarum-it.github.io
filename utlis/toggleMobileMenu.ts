@@ -1,6 +1,7 @@
 export const toggleMobileMenu = (): void => {
   const mobile_nav: HTMLElement | null = document.querySelector(".mobile-nav");
-  const desktop_nav: HTMLElement | null = document.querySelector(".desktop-nav");
+  const desktop_nav: HTMLElement | null =
+    document.querySelector(".desktop-nav");
 
   if (desktop_nav && desktop_nav.classList.contains("js-opened")) {
     desktop_nav.style.maxHeight = "0px";
@@ -21,7 +22,8 @@ export const toggleMobileMenu = (): void => {
 
 export const closeMobileMenu = (): void => {
   const mobile_nav: HTMLElement | null = document.querySelector(".mobile-nav");
-  const desktop_nav: HTMLElement | null = document.querySelector(".desktop-nav");
+  const desktop_nav: HTMLElement | null =
+    document.querySelector(".desktop-nav");
 
   if (desktop_nav && desktop_nav.classList.contains("js-opened")) {
     desktop_nav.style.maxHeight = "0px";

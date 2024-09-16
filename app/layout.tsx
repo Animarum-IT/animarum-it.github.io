@@ -1,14 +1,8 @@
-
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import clsx from "clsx";
-
-import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
 import AppInit from "@/components/layoutInitializations";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: {
@@ -33,10 +27,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html suppressHydrationWarning lang="en">
-            <head>
+      <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
@@ -67,8 +60,7 @@ export default function RootLayout({
         <AppInit />
 
         {children}
-        </body>
-
+      </body>
     </html>
   );
 }

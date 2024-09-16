@@ -6,18 +6,13 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
-import { Counter } from "@/components/counter";
 import Header from "@/components/header";
 import Hero from "@/components/sections/hero";
-import { Lakki_Reddy } from "next/font/google";
 import AnimatedButton from "@/components/common/animatedButton";
 import Service from "@/components/sections/services";
 import Contact from "@/components/sections/contact";
 
-
-
 const Home = () => {
-
   const testimonials4 = [
     {
       id: 1,
@@ -83,7 +78,7 @@ const Home = () => {
 
           <main id="main">
             <section className="page-section scrollSpysection" id="home">
-              <Hero></Hero>
+              <Hero />
             </section>
 
             {/* <Home4 onePage /> */}
@@ -95,12 +90,12 @@ const Home = () => {
             >
               <div className="bg-line-1 opacity-025">
                 <img
-                  src="/images/demo-corporate/decoration-2.svg"
-                  width={1600}
-                  height={513}
                   alt=""
                   className="wow fadeIn"
                   data-wow-delay="0.4s"
+                  height={513}
+                  src="/images/demo-corporate/decoration-2.svg"
+                  width={1600}
                 />
               </div>
               {/* End Decorative Line */}
@@ -111,11 +106,11 @@ const Home = () => {
                       High-rated Online Marketing Agency Based in New York
                     </h2>
                     <p className="section-descr dark-white mb-0">
-                      Marketing is the activity, set of institutions, and processes
-                      for creating, communicating, delivering, and exchanging
-                      offerings that have value for customers partners, and society at
-                      large. However, the definition of marketing has evolved over the
-                      years.
+                      Marketing is the activity, set of institutions, and
+                      processes for creating, communicating, delivering, and
+                      exchanging offerings that have value for customers
+                      partners, and society at large. However, the definition of
+                      marketing has evolved over the years.
                     </p>
                   </div>
                 </div>
@@ -141,8 +136,12 @@ const Home = () => {
                             />
                           ))}
                         </div>
-                        <div className="testimonials-5-text">{testimonial.text}</div>
-                        <div className="testimonials-5-caption">{testimonial.caption}</div>
+                        <div className="testimonials-5-text">
+                          {testimonial.text}
+                        </div>
+                        <div className="testimonials-5-caption">
+                          {testimonial.caption}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -151,10 +150,9 @@ const Home = () => {
 
                 {/* End Testimonials Grid */}
                 <div className="local-scroll text-center">
-
                   <a
-                    href="#services"
                     className={`btn btn-mod btn-w btn-with-icon btn-circle`}
+                    href="#services"
                   >
                     <span className="btn-icon color-3">
                       <i className="mi-favorite" />
@@ -170,8 +168,7 @@ const Home = () => {
             <section
               className="page-section bg-scroll light-content"
               style={{
-                backgroundImage:
-                  "url(/images/demo-corporate/section-bg-1.jpg)",
+                backgroundImage: "url(/images/demo-corporate/section-bg-1.jpg)",
               }}
             >
               {/* Desktop Overlay */}
@@ -184,8 +181,8 @@ const Home = () => {
                 <div className="row">
                   <div className="col-md-7 col-lg-6 col-xl-5">
                     <h2 className="section-title mb-40 mb-xs-30">
-                      Get <span className="mark-decoration-5">free</span> marketing
-                      consultation online
+                      Get <span className="mark-decoration-5">free</span>{" "}
+                      marketing consultation online
                     </h2>
                     <p className="section-descr mb-50 mb-sm-40">
                       Contact us and get free marketing consultation for your
@@ -193,12 +190,11 @@ const Home = () => {
                     </p>
                     <div className="local-scroll mb-70 mb-sm-50">
                       <a
-                        href="#contact"
                         className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
+                        href="#contact"
                       >
                         <span>Get a Consultation</span>
                       </a>
-
                     </div>
                   </div>
                 </div>
@@ -212,11 +208,11 @@ const Home = () => {
                       {clients.map((logo) => (
                         <img
                           key={logo.id}
+                          alt={logo.alt}
                           className="logo-grid-img"
+                          height={logo.height}
                           src={logo.src}
                           width={logo.width}
-                          height={logo.height}
-                          alt={logo.alt}
                         />
                       ))}
                     </div>
@@ -228,107 +224,104 @@ const Home = () => {
             </section>
 
             <section
-        className={`page-section pb-0 scrollSpysection`}
-        id="services"
-      >
-        <div className="container position-relative">
-          <div className="row mb-70 mb-sm-50">
-            <div className="col-md-8 offset-md-2 text-center">
-              <h2 className="section-title mb-40 mb-xs-30">
-                Providing the Best Marketing Solutions for Our Clients
-              </h2>
-              <p className="section-descr mb-0">
-                The marketing mix represents the basic tools that marketers can
-                use to bring their products or services to the market.
-              </p>
-            </div>
-          </div>
-        </div>
-        <Service />
-        {/* End Services Grid */}
-        {/* Call to Action Block */}
-        <div className="container position-relative z-index-1">
-          <div className="row text-center">
-            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <div className="text-center mb-40 mb-sm-30">
+              className={`page-section pb-0 scrollSpysection`}
+              id="services"
+            >
+              <div className="container position-relative">
+                <div className="row mb-70 mb-sm-50">
+                  <div className="col-md-8 offset-md-2 text-center">
+                    <h2 className="section-title mb-40 mb-xs-30">
+                      Providing the Best Marketing Solutions for Our Clients
+                    </h2>
+                    <p className="section-descr mb-0">
+                      The marketing mix represents the basic tools that
+                      marketers can use to bring their products or services to
+                      the market.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <Service />
+              {/* End Services Grid */}
+              {/* Call to Action Block */}
+              <div className="container position-relative z-index-1">
+                <div className="row text-center">
+                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <div className="text-center mb-40 mb-sm-30">
+                      <img
+                        alt=""
+                        height={100}
+                        src="/images/demo-corporate/section-image-1.png"
+                        width={100}
+                      />
+                    </div>
+                    <p className="section-descr-medium mb-50 mb-sm-40">
+                      Looking for exclusive marketing services? Contact us and
+                      get free online consultation for your brand or your
+                      client&apos;s brand.
+                    </p>
+                    <div className="local-scroll text-center">
+                      <a
+                        className={`btn btn-mod btn-w btn-with-icon btn-circle`}
+                        href="#contact"
+                      >
+                        <span className="btn-icon color-1">
+                          <i className="mi-heart" />
+                        </span>
+                        <span data-btn-animate="y">
+                          <AnimatedButton text={"Get Free Consultation"} />
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* End Call to Action Block */}
+              {/* Decorative Line */}
+              <div className="bg-line-2 mt-n10 mt-md-20 opacity-025">
                 <img
-                  src="/images/demo-corporate/section-image-1.png"
-                  width={100}
-                  height={100}
-                  alt="Image Description"
+                  alt=""
+                  height={243}
+                  src="/images/demo-corporate/decoration-3.svg"
+                  width={1600}
                 />
               </div>
-              <p className="section-descr-medium mb-50 mb-sm-40">
-                Looking for exclusive marketing services? Contact us and get
-                free online consultation for your brand or your client's brand.
-              </p>
-              <div className="local-scroll text-center">
-              <a
-                      href="#contact"
-                      className={`btn btn-mod btn-w btn-with-icon btn-circle`}
-                    >
-                      <span className="btn-icon color-1">
-                        <i className="mi-heart" />
-                      </span>
-                      <span data-btn-animate="y">
-                        <AnimatedButton text={"Get Free Consultation"} />
-                      </span>
-                    </a>
+            </section>
+            <section className={`page-section  scrollSpysection`} id="contact">
+              <div className="bg-line-3 opacity-025 mb-n90 mb-lg-n70 mb-md-n60 mb-sm-n40">
+                <img
+                  alt=""
+                  height={206}
+                  src="/images/demo-corporate/decoration-4.svg"
+                  width={1600}
+                />
               </div>
-            </div>
-          </div>
-        </div>
-        {/* End Call to Action Block */}
-        {/* Decorative Line */}
-        <div className="bg-line-2 mt-n10 mt-md-20 opacity-025">
-          <img
-            src="/images/demo-corporate/decoration-3.svg"
-            width={1600}
-            height={243}
-            alt=""
-          />
-        </div>
-      </section>
-      <section
-        className={`page-section  scrollSpysection`}
-        id="contact"
-      >
-        <div className="bg-line-3 opacity-025 mb-n90 mb-lg-n70 mb-md-n60 mb-sm-n40">
-          <img
-            src="/images/demo-corporate/decoration-4.svg"
-            width={1600}
-            height={206}
-            alt=""
-          />
-        </div>
-        {/* End Decorative Line */}
-        <div className="container position-relative">
-          <div className="row mb-80 mb-sm-60">
-            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-              <h2 className="section-title mb-40 mb-xs-30">
-                Let’s have a conversation
-              </h2>
-              <p className="section-descr dark-white mb-0">
-                We’re open to talking to good people. Just say hello, and we’ll
-                start productive cooperation. Start your own success story.
-              </p>
-            </div>
-          </div>{" "}
-          <Contact />
-        </div>
-      </section>
-      <hr className={`mt-0 mb-0`} />
-
+              {/* End Decorative Line */}
+              <div className="container position-relative">
+                <div className="row mb-80 mb-sm-60">
+                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+                    <h2 className="section-title mb-40 mb-xs-30">
+                      Let’s have a conversation
+                    </h2>
+                    <p className="section-descr dark-white mb-0">
+                      We’re open to talking to good people. Just say hello, and
+                      we’ll start productive cooperation. Start your own success
+                      story.
+                    </p>
+                  </div>
+                </div>{" "}
+                <Contact />
+              </div>
+            </section>
+            <hr className={`mt-0 mb-0`} />
           </main>
-          <footer className="footer-2 pb-50">
-            {/* <Footer4 /> */}
-          </footer>
+          <footer className="footer-2 pb-50">{/* <Footer4 /> */}</footer>
         </div>
       </div>
     </>
   );
-  return (
 
+  return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
         <h1 className={title()}>Make&nbsp;</h1>
@@ -341,8 +334,6 @@ const Home = () => {
           Beautiful, fast and modern React UI library.
         </h2>
       </div>
-
-
 
       <div className="flex gap-3">
         <Link
@@ -375,6 +366,6 @@ const Home = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Home;

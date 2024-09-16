@@ -7,14 +7,9 @@ import {
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-import { button as buttonStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import {
-  ArrowRightIcon,
-  SearchIcon,
-} from "@/components/icons";
 import { Button } from "@nextui-org/button";
+
+import { SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -39,21 +34,23 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar maxWidth="xl" isBordered={true} shouldHideOnScroll={false} position="sticky" className="backdrop-saturate-50 backdrop-blur-sm bg-[length:4px_4px] navbar-background-color" >
+    <NextUINavbar
+      className="backdrop-saturate-50 backdrop-blur-sm bg-[length:4px_4px] navbar-background-color"
+      isBordered={true}
+      maxWidth="xl"
+      position="sticky"
+      shouldHideOnScroll={false}
+    >
       <NavbarBrand>
-
         <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="shadow" size="md">
+          <Button as={Link} color="primary" href="#" size="md" variant="shadow">
             Connect
           </Button>
-
         </NavbarItem>
-
-
       </NavbarContent>
     </NextUINavbar>
   );

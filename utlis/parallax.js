@@ -1,3 +1,5 @@
+'use client'
+
 import Rellax from "rellax";
 
 export const parallaxMouseMovement = () => {
