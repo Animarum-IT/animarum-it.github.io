@@ -55,9 +55,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="bQ9wqVhsFQ5uNVINf0-Pa6bF1z3mbP9jbV3WMa1QfjU" />
       </head>
 
-      <body className="appear-animate body" suppressHydrationWarning>
+      <body className="appear-animate body">
         <AppInit />
         {children}
       </body>
