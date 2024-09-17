@@ -62,8 +62,6 @@ const Home = () => {
       alt: "Image description is here",
     },
   ];
-
-  return (<></>);
   return (
     <>
 
