@@ -11,7 +11,7 @@ const Header = () => {
                 If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
                 image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap position-static local-scroll">
-        <a className="logo" href="top">
+        <a className="logo" href="/#top">
           <img
             alt="Animarum Logo"
             className="light-mode-logo"

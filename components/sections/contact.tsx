@@ -1,6 +1,42 @@
 'use client'
 
-import React from "react";
+import React, { SyntheticEvent } from "react";
+
+interface RequestData {
+  subject: string;
+  name: string;
+  body: string;
+}
+
+
+function getMailtoUrl(to: string, subject: string, body: string) {
+  var args = [];
+  if (typeof subject !== 'undefined') {
+      args.push('subject=' + encodeURIComponent(subject));
+  }
+  if (typeof body !== 'undefined') {
+      args.push('body=' + encodeURIComponent(body))
+  }
+
+  var url = 'mailto:' + encodeURIComponent(to);
+  if (args.length > 0) {
+      url += '?' + args.join('&');
+  }
+  return url;
+}
+
+const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
+  event.preventDefault();
+  const form = event.target as HTMLFormElement;
+  const formData = new FormData(form) as unknown as Iterable<
+    [RequestData, FormDataEntryValue]
+  >;
+  const requestData: RequestData = Object.fromEntries(formData);
+
+  const mailtoUrl = getMailtoUrl("hello@subject.com", requestData.subject, `[From]\n${requestData.name}\n\n[Message]\n${requestData.body}` )
+  window.location.href = mailtoUrl;
+};
+
 
 export default function Contact() {
   const contactItems = [
@@ -50,9 +86,8 @@ export default function Contact() {
             {contactItems.map((item, index) => (
               <React.Fragment key={index}>
                 <div
-                  className={`contact-item ${
-                    index !== 3 ? "mb-40 mb-sm-20" : ""
-                  }`}
+                  className={`contact-item ${index !== 3 ? "mb-40 mb-sm-20" : ""
+                    }`}
                 >
                   <div className="ci-icon">
                     <i className={item.iconClass} />
@@ -88,9 +123,8 @@ export default function Contact() {
             <form
               className="form contact-form"
               id="contact_form"
-              action={"mailto:recipient@example.com" }
-              method="get"
               target="_top"
+              onSubmit={handleSubmit}
             >
               <div className="row">
                 <div className="col-md-6">
@@ -102,7 +136,7 @@ export default function Contact() {
                       aria-required="true"
                       className="input-lg round form-control"
                       id="name"
-                      name="subject" 
+                      name="name"
                       pattern=".{3,100}"
                       placeholder="Enter your name"
                       type="text"
@@ -115,14 +149,14 @@ export default function Contact() {
                   <div className="form-group">
                     <label htmlFor="subject">Subject</label>
                     <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      className="input-lg round form-control"
+                      placeholder="Enter your subject"
+                      pattern=".{5,100}"
                       required
                       aria-required="true"
-                      className="input-lg round form-control"
-                      id="subject"
-                      name="subject"
-                      pattern=".{5,100}"
-                      placeholder="Enter your subject"
-                      type="subject"
                     />
                   </div>
                   {/* End Email */}
