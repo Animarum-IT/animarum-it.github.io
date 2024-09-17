@@ -68,7 +68,7 @@ const Home = () => {
       <div className="theme-corporate">
         <div className="page" id="top">
           <nav className="main-nav transparent sticky wow-menubar wch-unset">
-            {/* <Header /> */}
+            <Header />
           </nav>
 
           <main id="main">
