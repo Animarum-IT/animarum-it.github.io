@@ -88,7 +88,7 @@ export default function Contact() {
             <form
               className="form contact-form"
               id="contact_form"
-              onSubmit={(e) => e.preventDefault()}
+              action="mailto:recipient@example.com" method="get"
             >
               <div className="row">
                 <div className="col-md-6">
@@ -100,7 +100,7 @@ export default function Contact() {
                       aria-required="true"
                       className="input-lg round form-control"
                       id="name"
-                      name="name"
+                      name="subject" 
                       pattern=".{3,100}"
                       placeholder="Enter your name"
                       type="text"
@@ -133,7 +133,7 @@ export default function Contact() {
                   className="input-lg round form-control"
                   defaultValue={""}
                   id="message"
-                  name="message"
+                  name="body"
                   placeholder="Enter your message"
                   style={{ height: 132 }}
                 />
