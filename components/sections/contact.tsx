@@ -88,7 +88,9 @@ export default function Contact() {
             <form
               className="form contact-form"
               id="contact_form"
-              action="mailto:recipient@example.com" method="get"
+              action={"mailto:recipient@example.com" }
+              method="get"
+              target="_top"
             >
               <div className="row">
                 <div className="col-md-6">
@@ -111,16 +113,16 @@ export default function Contact() {
                 <div className="col-md-6">
                   {/* Email */}
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="subject">Subject</label>
                     <input
                       required
                       aria-required="true"
                       className="input-lg round form-control"
-                      id="email"
-                      name="email"
+                      id="subject"
+                      name="subject"
                       pattern=".{5,100}"
-                      placeholder="Enter your email"
-                      type="email"
+                      placeholder="Enter your subject"
+                      type="subject"
                     />
                   </div>
                   {/* End Email */}
