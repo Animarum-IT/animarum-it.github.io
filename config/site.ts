@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Animarum",
-  description: "Animarum landing page",
+  name: "Animarum | Expert Consultants in AI and Cloud Solutions",
+  description: "Discover Animarum's cutting-edge AI and cloud consulting services. Our expert consultants help businesses leverage advanced technology to drive innovation, streamline operations, and achieve sustainable growth. Transform your business with tailored solutions today.",
   navItems: [
     {
       label: "Home",
