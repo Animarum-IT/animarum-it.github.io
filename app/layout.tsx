@@ -58,7 +58,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="bQ9wqVhsFQ5uNVINf0-Pa6bF1z3mbP9jbV3WMa1QfjU" />
       </head>
 
-      <body className="appear-animate body">
+      <body className="appear-animate body h-100">
         <AppInit />
         {children}
       </body>

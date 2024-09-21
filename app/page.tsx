@@ -5,6 +5,8 @@ import Hero from "@/components/sections/hero";
 import AnimatedButton from "@/components/common/animatedButton";
 import Service from "@/components/sections/services";
 import Contact from "@/components/sections/contact";
+import Image from 'next/image';
+import logo from "@/public/images/demo-corporate/logo-white.svg";
 
 const Home = () => {
 
@@ -62,6 +64,25 @@ const Home = () => {
       alt: "Image description is here",
     },
   ];
+
+  return <>
+    <main id="main">
+
+      <div className="d-flex flex-column justify-content-center align-items-center gap-5" style={{ height: "100vh" }}>
+        <div className=" mt-n90 mt-md-n60 wow fadeIn"
+          data-wow-duration="3s"
+        >
+          <Image
+            priority
+            src={logo}
+            alt="Logo"
+          />
+        </div>
+        <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">Vi ses snart!</h1>
+      </div>
+    </main>
+  </>
+
   return (
     <>
 
