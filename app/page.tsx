@@ -72,6 +72,7 @@ const Home = () => {
         <div className=" mt-n90 mt-md-n60 wow fadeIn"
           data-wow-duration="3s"
         >
+          
           <Image
             priority
             src={logo}
