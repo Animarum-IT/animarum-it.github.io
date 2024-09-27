@@ -14,15 +14,13 @@ const Hero = () => {
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-flex align-items-center order-first order-lg-last mb-md-60">
             <div className="w-100 text-center text-lg-start">
               <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
-                Transform Your Business with Cutting-Edge AI and IT Solutions
+                Transforming your business through engineering solutions has never been easier.
               </h1>
               <p
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp"
                 data-wow-delay="0.15s"
               >
-                Leverage the power of Artificial Intelligence and
-                state-of-the-art IT consultancy to unlock growth, efficiency,
-                and innovation.
+                We collaborate with you at every stage to develop innovative solutions that blend cutting-edge software solutions, seamless customer experiences, and advanced AI technology.
               </p>
               <div
                 className="wow fadeInUp wch-unset"
