@@ -48,6 +48,7 @@ const Header = () => {
           <li>
             <a href="tel:">
               <i className="mi-mobile size-24 color-primary-1 align-center" />
+              hi@animarum.se
             </a>
           </li>
           {/* Social Links */}
