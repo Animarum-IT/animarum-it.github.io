@@ -46,9 +46,8 @@ const Header = () => {
             <div className="vr mt-2" />
           </li>
           <li>
-            <a href="tel:+4672-9782823">
+            <a href="tel:">
               <i className="mi-mobile size-24 color-primary-1 align-center" />
-              +46 72-978 28
             </a>
           </li>
           {/* Social Links */}
