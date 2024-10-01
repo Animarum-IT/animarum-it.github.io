@@ -27,31 +27,6 @@ const Hero = () => {
                 data-wow-delay="0.3s"
                 data-wow-offset={0}
               >
-                <div className="local-scroll mb-60 mb-sm-50">
-                  <a
-                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-                    href="#contact"
-                  >
-                    <span>Get a Consultation</span>
-                  </a>
-                </div>
-                {/* Features List */}
-                <div className="mt-n10">
-                  {/* Features List Item */}
-                  {features.map((feature) => (
-                    <div
-                      key={feature.id}
-                      className="d-flex justify-content-center justify-content-lg-start mt-10"
-                    >
-                      <div className="features-list-icon">
-                        <i className="mi-check" />
-                      </div>
-                      <div className="features-list-text">{feature.text}</div>
-                    </div>
-                  ))}
-                  {/* End Features List Item */}
-                </div>
-                {/* End Features List */}
               </div>
             </div>
           </div>
