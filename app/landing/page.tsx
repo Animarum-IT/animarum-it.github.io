@@ -129,7 +129,7 @@ const Landing = () => {
                         <section
                             className="page-section bg-scroll light-content"
                             style={{
-                                backgroundImage: "url(/images/demo-corporate/section-bg-1.jpg)",
+                                backgroundImage: "url(/images/demo-corporate/section-bg-1.png)",
                             }}
                         >
                             {/* Desktop Overlay */}
@@ -142,8 +142,7 @@ const Landing = () => {
                                 <div className="row">
                                     <div className="col-md-7 col-lg-6 col-xl-5">
                                         <h2 className="section-title mb-40 mb-xs-30">
-                                            Get <span className="mark-decoration-5">free</span>
-                                            solution discovery consultation
+                                            Get <span className="mark-decoration-5">free</span> solution discovery consultation
                                         </h2>
                                         <p className="section-descr mb-50 mb-sm-40">
                                             Contact us to give you a free consultation on solution discovery.

@@ -75,9 +75,9 @@ export default function Contact() {
     <>
       <div className="row wow fadeInUp">
         {/* Left Column */}
-        <div className="col-lg-5 mb-md-50 mb-sm-30 d-flex align-items-strech">
+        <div className="">
           <div
-            className="bg-color-primary-1 bg-color-alpha-90 bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
+            className="bg-color-primary-1 bg-color-alpha-90 bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5 d-lg-flex align-items-strech"
             style={{
               backgroundImage: "url(/images/demo-corporate/section-bg-4.jpg)",
             }}
@@ -113,104 +113,7 @@ export default function Contact() {
           </div>
         </div>
         {/* End Left Column */}
-        {/* Right Column */}
-        <div className="col-lg-7 d-flex align-items-strech">
-          <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
-            <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              We&apos;d love to hear from you
-            </h3>
-            {/* Contact Form */}
-            <form
-              className="form contact-form"
-              id="contact_form"
-              target="_top"
-              onSubmit={handleSubmit}
-            >
-              <div className="row">
-                <div className="col-md-6">
-                  {/* Name */}
-                  <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input
-                      required
-                      aria-required="true"
-                      className="input-lg round form-control"
-                      id="name"
-                      name="name"
-                      pattern=".{3,100}"
-                      placeholder="Enter your name"
-                      type="text"
-                    />
-                  </div>
-                  {/* End Name */}
-                </div>
-                <div className="col-md-6">
-                  {/* Email */}
-                  <div className="form-group">
-                    <label htmlFor="subject">Subject</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      className="input-lg round form-control"
-                      placeholder="Enter your subject"
-                      pattern=".{5,100}"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  {/* End Email */}
-                </div>
-              </div>
-              {/* Message */}
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  className="input-lg round form-control"
-                  defaultValue={""}
-                  id="message"
-                  name="body"
-                  placeholder="Enter your message"
-                  style={{ height: 132 }}
-                />
-              </div>
-              <div className="row">
-                <div className="col-md-6 col-xl-7 d-flex align-items-center">
-                  {/* Inform Tip */}
-                  <div className="form-tip w-100 pt-3">
-                    <i className="icon-info size-16" />
-                    All the fields are required. By sending the form you agree
-                    to the <a href="/#">Terms &amp; Conditions</a> and{" "}
-                    <a href="/#">Privacy Policy</a>.
-                  </div>
-                  {/* End Inform Tip */}
-                </div>
-                <div className="col-md-6 col-xl-5 mt-sm-20">
-                  {/* Send Button */}
-                  <div className="pt-3 text-md-end">
-                    <button
-                      aria-controls="result"
-                      className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-                      id="submit_btn"
-                      type="submit"
-                    >
-                      <span>Send Message</span>
-                    </button>
-                  </div>
-                  {/* End Send Button */}
-                </div>
-              </div>
-              <div
-                aria-atomic="true"
-                aria-live="polite"
-                id="result"
-                role="region"
-              />
-            </form>
-            {/* End Contact Form */}
-          </div>
-        </div>
-        {/* End Right Column */}
+        
       </div>
     </>
   );
