@@ -13,14 +13,14 @@ const Header = () => {
       <div className="nav-logo-wrap position-static local-scroll">
         <a className="logo" href="/#top">
           <img
-            alt="Animarum Logo"
+            alt="ANIMARUM Logo"
             className="light-mode-logo"
             height={75}
             src="/images/demo-corporate/logo-dark.svg"
             width={300}
           />
           <img
-            alt="Animarum Logo"
+            alt="ANIMARUM Logo"
             className="dark-mode-logo"
             height={75}
             src="/images/demo-corporate/logo-white.svg"

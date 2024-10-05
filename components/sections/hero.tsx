@@ -75,16 +75,21 @@ const Hero = () => {
                     className="btn btn-mod btn-w btn-with-icon btn-circle"
                     href="#services"
                   >
-                    <span className="btn-icon color-3">
-                      <i aria-hidden="true" className="mi-user" />
+                    <span className="btn-icon color-1">
+                      <img
+                        alt=""
+                        height={20}
+                        src="/images/services/ai1.png"
+                        width={20}
+                      />
                     </span>
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Marketing Consulting
+                          AIOps
                         </span>
                         <span aria-hidden="true" className="btn-animate-y-2">
-                          Marketing Consulting
+                          AIOps
                         </span>
                       </span>
                     </span>
@@ -96,15 +101,20 @@ const Hero = () => {
                     href="#services"
                   >
                     <span className="btn-icon color-2">
-                      <i aria-hidden="true" className="mi-search" />
+                      <img
+                        alt=""
+                        height={20}
+                        src="/images/services/cloud1.png"
+                        width={20}
+                      />
                     </span>
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Search Engine Optimization
+                          Cloud Engineering
                         </span>
                         <span aria-hidden="true" className="btn-animate-y-2">
-                          Search Engine Optimization
+                          Cloud Engineering
                         </span>
                       </span>
                     </span>
@@ -116,15 +126,20 @@ const Hero = () => {
                     href="#services"
                   >
                     <span className="btn-icon color-4">
-                      <i aria-hidden="true" className="mi-message" />
+                    <img
+                        alt=""
+                        height={20}
+                        src="/images/services/solutiondiscovery.png"
+                        width={20}
+                      />
                     </span>
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Social Media Marketing
+                          Solution Discovery
                         </span>
                         <span aria-hidden="true" className="btn-animate-y-2">
-                          Social Media Marketing
+                          Solution Discovery
                         </span>
                       </span>
                     </span>

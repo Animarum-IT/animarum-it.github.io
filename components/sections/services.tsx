@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 const services = [
   {
@@ -38,6 +39,16 @@ const services = [
     delay: "0.3s",
     iconColorClass: "color-4",
   },
+  {
+    id: 5,
+    path: "/images/services/security.png",
+    title: "Cybersecurity",
+    text: "At ANIMARUM we offer a comprehensive suite of cybersecurity services designed to safeguard your digital assets, protect sensitive information, and ensure compliance with industry standards.",
+    categories: [],
+    delay: "0.3s",
+    iconColorClass: "color-5",
+
+  }
 ];
 
 const ServiceItem = ({
@@ -62,8 +73,11 @@ const ServiceItem = ({
         data-wow-delay={delay}
         data-wow-duration="1.2s"
       >
-        <div className={`services-8-icon ${iconColorClass}`}>
-          <Image src={path} alt="alt" width={60} height={60} />
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div className={`services-8-icon ${iconColorClass}`}>
+            <Image src={path} alt="alt" width={60} height={60} />
+          </div>
+
         </div>
         <h3 className="services-8-title">{title}</h3>
         <p className="services-8-text">{text}</p>
@@ -73,13 +87,12 @@ const ServiceItem = ({
           </div>
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 
 export default function Service() {
   return (
-    <>
       <>
         {/* Services Grid */}
         <div className="row g-0 mb-70 mb-sm-50">
@@ -90,6 +103,5 @@ export default function Service() {
           {/* End Services Item */}
         </div>
       </>
-    </>
   );
 }

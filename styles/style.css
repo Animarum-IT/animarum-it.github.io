@@ -6433,7 +6433,7 @@ img.services-image {
   align-self: stretch;
   margin: -1px 0 0 -1px;
   border: 1px solid var(--color-primary-light-1-a);
-  border-right: none;
+  border-left: none;
 }
 .services-8-icon {
   display: flex;
@@ -6465,6 +6465,12 @@ img.services-image {
   color: var(--color-primary-light-4);
   background: var(--color-primary-4);
 }
+
+.services-8-icon.color-5 {
+  color: var(--color-primary-light-5);
+  background: var(--color-primary-5);
+}
+
 .services-8-icon.color-1 svg {
   fill: var(--color-primary-light-1);
 }

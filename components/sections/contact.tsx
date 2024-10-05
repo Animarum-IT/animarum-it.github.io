@@ -86,6 +86,7 @@ export default function Contact() {
             {contactItems.map((item, index) => (
               <React.Fragment key={index}>
                 <div
+                style={{flex: 1}}
                   className={`contact-item ${index !== 3 ? "mb-40 mb-sm-20" : ""
                     }`}
                 >

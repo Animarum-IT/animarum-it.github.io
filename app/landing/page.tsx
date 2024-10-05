@@ -3,7 +3,7 @@ import Hero from "@/components/sections/hero";
 import AnimatedButton from "@/components/common/animatedButton";
 import Service from "@/components/sections/services";
 import Contact from "@/components/sections/contact";
-import Image from 'next/image';
+import React from "react";
 
 const Landing = () => {
 
@@ -169,7 +169,7 @@ const Landing = () => {
                                 <div className="row mb-70 mb-sm-50">
                                     <div className="col-md-8 offset-md-2 text-center">
                                         <h2 className="section-title mb-40 mb-xs-30">
-                                            Animarum provides
+                                            ANIMARUM provides
                                         </h2>
                                     </div>
                                 </div>

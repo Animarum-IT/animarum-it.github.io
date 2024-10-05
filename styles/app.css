@@ -38,6 +38,9 @@
     --color-primary-light-3: #ffdfeb;
     --color-primary-4: #19c4c4;
     --color-primary-light-4: #d1ffff;
+    --color-primary-5: #7752e7;
+    --color-primary-light-5: #e7defe;
+  
     --border-radius-default: 12px;
     --box-shadow-block: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
     --box-shadow-block-strong: 0px 12px 37px 0px rgba(0, 0, 0, 0.175);
