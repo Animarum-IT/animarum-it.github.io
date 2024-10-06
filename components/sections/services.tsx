@@ -22,15 +22,6 @@ const services = [
     iconColorClass: "color-2",
   },
   {
-    id: 3,
-    path: "/images/services/systemdesigns.png",
-    title: "System Design",
-    text: "Whether you're building a new system from scratch or enhancing an existing one, our design solutions prioritize scalability, security, and flexibility. Let's design systems that empower your business to grow and succeed!",
-    categories: [],
-    delay: "0.3s",
-    iconColorClass: "color-1",
-  },
-  {
     id: 4,
     path: "/images/services/solutiondiscovery.png",
     title: "Solution Discovery",
@@ -79,7 +70,7 @@ const ServiceItem = ({
           </div>
 
         </div>
-        <h3 className="services-8-title">{title}</h3>
+        <h3 className="services-8-title" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>{title}</h3>
         <p className="services-8-text">{text}</p>
         {categories.map((category, index) => (
           <div key={index} className="pb-1">

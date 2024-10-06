@@ -144,9 +144,6 @@ const Landing = () => {
                                         <h2 className="section-title mb-40 mb-xs-30">
                                             Get <span className="mark-decoration-5">free</span> solution discovery consultation
                                         </h2>
-                                        <p className="section-descr mb-50 mb-sm-40">
-                                            Contact us to give you a free consultation on solution discovery.
-                                        </p>
                                         <div className="local-scroll mb-70 mb-sm-50">
                                             <a
                                                 className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"

@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-flex align-items-center order-first order-lg-last mb-md-60">
             <div className="w-100 text-center text-lg-start">
               <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
-                Transforming your business through engineering solutions has never been easier.
+                ANIMARUM transforms your business through engineering solutions has never been easier.
               </h1>
               <p
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp"
@@ -75,7 +75,7 @@ const Hero = () => {
                     className="btn btn-mod btn-w btn-with-icon btn-circle"
                     href="#services"
                   >
-                    <span className="btn-icon color-1">
+                    <span className="btn-icon color-3">
                       <img
                         alt=""
                         height={20}
@@ -126,7 +126,7 @@ const Hero = () => {
                     href="#services"
                   >
                     <span className="btn-icon color-4">
-                    <img
+                      <img
                         alt=""
                         height={20}
                         src="/images/services/solutiondiscovery.png"
@@ -145,6 +145,32 @@ const Hero = () => {
                     </span>
                   </a>
                 </div>
+                <div className="mt-10">
+                  <a
+                    className="btn btn-mod btn-w btn-with-icon btn-circle"
+                    href="#services"
+                  >
+                    <span className="btn-icon color-5">
+                      <img
+                        alt=""
+                        height={20}
+                        src="/images/services/security.png"
+                        width={20}
+                      />
+                    </span>
+                    <span data-btn-animate="y">
+                      <span className="btn-animate-y">
+                        <span className="btn-animate-y-1">
+                          Cybersecurity
+                        </span>
+                        <span aria-hidden="true" className="btn-animate-y-2">
+                          Cybersecurity
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+
               </div>
 
               {/* End Overlay Buttons */}
