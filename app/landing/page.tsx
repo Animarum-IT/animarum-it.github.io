@@ -98,14 +98,14 @@ const Landing = () => {
                                 <div className="row mb-70 mb-sm-50">
                                     <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
                                         <h2 className="section-title mb-40 mb-xs-30">
-                                            High-rated Online Marketing Agency Based in New York
+                                            ANIMARUM - "Innovation for the Soul of Technology"
                                         </h2>
                                         <p className="section-descr dark-white mb-0">
-                                            Marketing is the activity, set of institutions, and
-                                            processes for creating, communicating, delivering, and
-                                            exchanging offerings that have value for customers
-                                            partners, and society at large. However, the definition of
-                                            marketing has evolved over the years.
+                                            When we created ANIMARUM, we wanted to have an environment that puts a human touch 
+                                            to an ever evolving world of tech. 
+                                        </p>
+                                        <p className="section-descr dark-white mb-0">
+                                            Tech powered by and for people.
                                         </p>
                                     </div>
                                 </div>
