@@ -20,7 +20,7 @@ const Hero = () => {
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp"
                 data-wow-delay="0.15s"
               >
-                We collaborate with you at every stage to develop innovative solutions that blend cutting-edge software solutions, seamless customer experiences, and advanced AI technology.
+                We collaborate with you at every stage to develop secure and innovative solutions, that offer seamless customer experiences.
               </p>
               <div
                 className="wow fadeInUp wch-unset"
