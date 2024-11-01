@@ -54,7 +54,7 @@ const Hero = () => {
                   className="wow fadeScaleOutIn"
                   data-wow-duration="1.3s"
                   height={800}
-                  src="/images/demo-corporate/hs-image-2.jpg"
+                  src="/images/demo-corporate/hs-main-opener.png"
                   width={706}
                 />
               </div>

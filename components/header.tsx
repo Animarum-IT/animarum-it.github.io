@@ -46,14 +46,14 @@ const Header = () => {
             <div className="vr mt-2" />
           </li>
           <li>
-            <a href="tel:">
+            <a href="tel:+46734407342">
               <i className="mi-mobile size-24 color-primary-1 align-center" />
-              hi@animarum.se
+              +46 73 440 73 42
             </a>
           </li>
           {/* Social Links */}
           <li>
-            <a className="no-hover opacity-1 pe-1" href="/#">
+            <a className="no-hover opacity-1 pe-1" target="_blank" href="https://www.linkedin.com/company/animarumse/about/">
               <span className="mn-soc-link mn-soc-link-color" title="LinkedIn">
                 <i className="fa-linkedin-in" />
               </span>

@@ -43,9 +43,9 @@ export default function Contact() {
     {
       iconClass: "mi-location",
       title: "Address",
-      text: "Envato Pty Ltd, PO Box 16122 Collins Street, West Victoria.",
+      text: "Kocksgatan 37, 116 24 Stockholm",
       link: {
-        url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
+        url: "https://maps.app.goo.gl/mfvAbeuFkPviaJNw6",
         text: "See Map",
         rel: "nofollow noopener",
         target: "_blank",
@@ -54,18 +54,18 @@ export default function Contact() {
     {
       iconClass: "mi-email",
       title: "Email",
-      text: "elitethemes24@gmail.com",
+      text: "hi@animarum.se",
       link: {
-        url: "mailto:elitethemes24@gmail.com",
+        url: "mailto:hi@animarum.se",
         text: "Say Hello",
       },
     },
     {
       iconClass: "mi-mobile",
       title: "Phone",
-      text: "+1 837 652 8800",
+      text: "+46 73 440 73 42",
       link: {
-        url: "tel:+61383767284",
+        url: "tel:+46734407342",
         text: "Call now",
       },
     },
