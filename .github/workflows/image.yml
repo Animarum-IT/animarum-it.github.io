@@ -22,4 +22,4 @@ jobs:
     - name: 'Build Inventory Image'
       run: |
         docker build . --tag ghcr.io/Animarum-IT/landing:latest
-        docker push ghcr.io/Animarum-IT/landing:latest
+        docker push ghcr.io/animarum-it/landing:latest
