@@ -1,14 +1,25 @@
 # syntax=docker.io/docker/dockerfile:1
 
-FROM node:18-alpine
+FROM node:18-alpine as builder
 
+COPY . app
 WORKDIR /app
-COPY . .
-EXPOSE 3000
+RUN npm install && npm run build
 
+EXPOSE 3000
 ENV PORT=3000
 
-# server.js is created by next build from the standalone output
-# https://nextjs.org/docs/pages/api-reference/next-config-js/output
-ENV HOSTNAME="0.0.0.0"
-CMD ["node", "server.js"]
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
+
+# Copy built assets from builder stage to nginx
+COPY --from=builder /app/out /usr/share/nginx/html
+
+# Copy custom nginx config if needed
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
