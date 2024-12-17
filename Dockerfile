@@ -1,11 +1,8 @@
 # syntax=docker.io/docker/dockerfile:1
 
-FROM node:18-alpine AS base
+FROM node:18-alpine
 
-# Rebuild the source code only when needed
-FROM base AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 USER nextjs
